@@ -20,6 +20,14 @@
       "headers": {
         "Content-Type": "text/plain"
       }
+    },
+    {
+      "src": "/(.*\\.(css|js|jpg|jpeg|png|gif|ico|svg))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
