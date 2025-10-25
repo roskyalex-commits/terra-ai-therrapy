@@ -1,25 +1,36 @@
 {
+  "public": true,
   "routes": [
     {
-      "src": "/google6e2296ba8919f04a.html",
-      "dest": "/google6e2296ba8919f04a.html",
+      "src": "/robots.txt",
+      "dest": "/public/robots.txt",
       "headers": {
-        "Content-Type": "text/html"
+        "Content-Type": "text/plain; charset=utf-8"
       }
     },
     {
       "src": "/sitemap.xml",
-      "dest": "/sitemap.xml",
+      "dest": "/public/sitemap.xml", 
       "headers": {
-        "Content-Type": "application/xml"
+        "Content-Type": "application/xml; charset=utf-8"
       }
     },
     {
-      "src": "/robots.txt",
-      "dest": "/robots.txt",
+      "src": "/google6e2296ba8919f04a.html",
+      "dest": "/public/google6e2296ba8919f04a.html",
       "headers": {
-        "Content-Type": "text/plain"
+        "Content-Type": "text/html; charset=utf-8"
       }
+    },
+    {
+      "src": "/(.*\\.(css|js|jpg|jpeg|png|gif|ico|svg))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
-  ]
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
 }
