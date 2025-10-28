@@ -1,6 +1,28 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/#services",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/#about",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/#blog",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/#contact",
+      "destination": "/contact/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

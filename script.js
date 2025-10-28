@@ -1,5 +1,20 @@
 // Interactive functionalities for TerrapyAI Landing Page
 
+// Handle legacy hash-based URLs by redirecting to new clean URLs
+(function() {
+    const hash = window.location.hash;
+    const hashToPath = {
+        '#services': '/services/',
+        '#about': '/about/',
+        '#blog': '/blog/',
+        '#contact': '/contact/'
+    };
+    
+    if (hash && hashToPath[hash]) {
+        window.location.replace(hashToPath[hash]);
+    }
+})();
+
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');

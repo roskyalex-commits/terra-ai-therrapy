@@ -1,1 +1,9 @@
+# Redirect www to non-www
 https://www.talkswithterra.com/* https://talkswithterra.com/:splat 301!
+
+# Legacy hash-based URLs to new clean URLs (for compatibility)
+# Note: Hash fragments are client-side, so these work for direct access
+/#services /services/ 301
+/#about /about/ 301
+/#blog /blog/ 301
+/#contact /contact/ 301
